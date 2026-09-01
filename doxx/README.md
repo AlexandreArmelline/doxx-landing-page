@@ -53,6 +53,23 @@ doxx/
 - **Benefícios claros** focados no público-alvo (advogados)
 - **Design responsivo** para mobile e desktop
 
+## 🎨 Paleta de Cores (Identidade DOXX)
+
+A landing page utiliza a paleta oficial da marca DOXX:
+
+| Cor | Hex | Uso |
+|-----|-----|-----|
+| Azul Marinho | `#1E3A5F` | Cor principal (CTAs, destaques) |
+| Cinza Escuro | `#3F4754` | Textos secundários |
+| Quase Preto | `#1A1E26` | Textos principais, fundos escuros |
+| Cinza Médio | `#8A93A1` | Textos de apoio, ícones |
+| Cinza Claro | `#DCE0E7` | Bordas, divisores |
+| Cinza Muito Claro | `#EDEFF3` | Fundos de destaque |
+| Quase Branco | `#F7F8FA` | Fundos de seções |
+| Branco | `#FFFFFF` | Fundos principais, cards |
+
+As cores são definidas como variáveis CSS no início de `css/style.css` (bloco `:root`), facilitando a manutenção e futuras alterações.
+
 ## 🛠️ Tecnologias
 
 - HTML5

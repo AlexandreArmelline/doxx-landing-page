@@ -2,33 +2,33 @@
 /* BLOCO 1: VARIÁVEIS E RESET                   */
 /* ============================================ */
 :root {
-    /* Cores principais - identidade jurídica */
-    --primary: #1a2a6c;
-    --primary-dark: #101a4a;
-    --primary-light: #2a3f8f;
-    --accent: #b91c1c;
-    --accent-light: #e63946;
-    --gold: #d4af37;
-    --dark: #0f172a;
-    --dark-2: #1e293b;
-    --light: #f8fafc;
-    --gray: #64748b;
-    --gray-light: #e2e8f0;
-    --white: #ffffff;
+    /* Cores principais - identidade jurídica DOXX */
+    --primary: #1E3A5F;          /* Azul marinho - cor principal */
+    --primary-dark: #162b47;     /* Azul marinho escuro */
+    --primary-light: #2a4d7a;    /* Azul marinho claro */
+    --accent: #1E3A5F;           /* Acento principal (azul marinho) */
+    --accent-light: #2a4d7a;     /* Acento claro */
+    --gold: #8A93A1;             /* Destaque (cinza médio) */
+    --dark: #1A1E26;             /* Quase preto - textos/fundos escuros */
+    --dark-2: #3F4754;           /* Cinza escuro - textos */
+    --light: #F7F8FA;            /* Fundo claro */
+    --gray: #8A93A1;             /* Cinza médio - textos secundários */
+    --gray-light: #DCE0E7;       /* Cinza claro - bordas */
+    --white: #FFFFFF;            /* Branco */
 
     /* Gradientes */
-    --gradient-primary: linear-gradient(135deg, #1a2a6c 0%, #2a3f8f 50%, #3a5bbf 100%);
-    --gradient-accent: linear-gradient(135deg, #b91c1c 0%, #e63946 100%);
-    --gradient-dark: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+    --gradient-primary: linear-gradient(135deg, #1E3A5F 0%, #2a4d7a 50%, #3a5f8f 100%);
+    --gradient-accent: linear-gradient(135deg, #1E3A5F 0%, #2a4d7a 100%);
+    --gradient-dark: linear-gradient(135deg, #1A1E26 0%, #3F4754 100%);
 
     /* Tipografia */
     --font: 'Inter', sans-serif;
 
     /* Sombras */
-    --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.08);
-    --shadow-md: 0 4px 20px rgba(0, 0, 0, 0.12);
-    --shadow-lg: 0 8px 40px rgba(0, 0, 0, 0.16);
-    --shadow-primary: 0 8px 30px rgba(26, 42, 108, 0.3);
+    --shadow-sm: 0 2px 8px rgba(26, 30, 38, 0.08);
+    --shadow-md: 0 4px 20px rgba(26, 30, 38, 0.12);
+    --shadow-lg: 0 8px 40px rgba(26, 30, 38, 0.16);
+    --shadow-primary: 0 8px 30px rgba(30, 58, 95, 0.3);
 
     /* Transições */
     --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
@@ -107,12 +107,12 @@ button {
 .btn-primary {
     background: var(--gradient-accent);
     color: var(--white);
-    box-shadow: 0 4px 20px rgba(185, 28, 28, 0.35);
+    box-shadow: 0 4px 20px rgba(30, 58, 95, 0.35);
 }
 
 .btn-primary:hover {
     transform: translateY(-3px);
-    box-shadow: 0 8px 30px rgba(185, 28, 28, 0.45);
+    box-shadow: 0 8px 30px rgba(30, 58, 95, 0.45);
 }
 
 .btn-outline {
@@ -154,7 +154,7 @@ button {
 }
 
 .navbar.scrolled {
-    background: rgba(15, 23, 42, 0.95);
+    background: rgba(26, 30, 38, 0.95);
     backdrop-filter: blur(10px);
     padding: 12px 0;
     box-shadow: var(--shadow-md);
@@ -182,7 +182,7 @@ button {
     justify-content: center;
     color: var(--white);
     font-size: 1.2rem;
-    box-shadow: 0 4px 12px rgba(185, 28, 28, 0.3);
+    box-shadow: 0 4px 12px rgba(30, 58, 95, 0.3);
 }
 
 .logo-text {
@@ -277,9 +277,9 @@ button {
     right: 0;
     bottom: 0;
     background:
-        radial-gradient(circle at 20% 20%, rgba(26, 42, 108, 0.6) 0%, transparent 50%),
-        radial-gradient(circle at 80% 80%, rgba(185, 28, 28, 0.3) 0%, transparent 50%),
-        radial-gradient(circle at 60% 40%, rgba(58, 91, 191, 0.4) 0%, transparent 50%);
+        radial-gradient(circle at 20% 20%, rgba(30, 58, 95, 0.6) 0%, transparent 50%),
+        radial-gradient(circle at 80% 80%, rgba(63, 71, 84, 0.3) 0%, transparent 50%),
+        radial-gradient(circle at 60% 40%, rgba(58, 95, 143, 0.4) 0%, transparent 50%);
     z-index: 1;
 }
 
@@ -581,7 +581,7 @@ button {
 
 .section-tag {
     display: inline-block;
-    background: rgba(185, 28, 28, 0.1);
+    background: rgba(30, 58, 95, 0.1);
     color: var(--accent);
     padding: 6px 16px;
     border-radius: var(--radius-full);
@@ -757,7 +757,7 @@ button {
     justify-content: center;
     color: var(--white);
     font-size: 1.3rem;
-    box-shadow: 0 4px 16px rgba(185, 28, 28, 0.3);
+    box-shadow: 0 4px 16px rgba(30, 58, 95, 0.3);
 }
 
 .beneficio-item h4 {
@@ -838,7 +838,7 @@ button {
     margin: 0 auto 24px;
     font-size: 1.8rem;
     color: var(--white);
-    box-shadow: 0 8px 24px rgba(185, 28, 28, 0.4);
+    box-shadow: 0 8px 24px rgba(30, 58, 95, 0.4);
 }
 
 .step h3 {
@@ -948,7 +948,7 @@ button {
     right: -20%;
     width: 600px;
     height: 600px;
-    background: radial-gradient(circle, rgba(185, 28, 28, 0.2) 0%, transparent 70%);
+    background: radial-gradient(circle, rgba(30, 58, 95, 0.2) 0%, transparent 70%);
     border-radius: 50%;
 }
 
@@ -1044,11 +1044,11 @@ button {
     outline: none;
     border-color: var(--primary);
     background: var(--white);
-    box-shadow: 0 0 0 4px rgba(26, 42, 108, 0.1);
+    box-shadow: 0 0 0 4px rgba(30, 58, 95, 0.1);
 }
 
 .form-group input::placeholder {
-    color: #94a3b8;
+    color: #8A93A1;
 }
 
 .form-note {
@@ -1074,14 +1074,14 @@ button {
 .success-icon {
     width: 80px;
     height: 80px;
-    background: #dcfce7;
+    background: #EDEFF3;
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
     margin: 0 auto 24px;
     font-size: 2.5rem;
-    color: #16a34a;
+    color: #1E3A5F;
 }
 
 .form-success h3 {
