@@ -1,0 +1,184 @@
+/* ============================================ */
+/* BLOCO 1: RESPONSIVIDADE - TABLET (1024px)    */
+/* ============================================ */
+@media (max-width: 1024px) {
+    .hero-title {
+        font-size: 2.6rem;
+    }
+
+    .solucao-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .steps {
+        flex-direction: column;
+        gap: 24px;
+    }
+
+    .step-arrow {
+        transform: rotate(90deg);
+    }
+
+    .depoimentos-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .cta-box {
+        grid-template-columns: 1fr;
+        padding: 40px;
+    }
+
+    .footer-top {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+/* ============================================ */
+/* BLOCO 2: RESPONSIVIDADE - MOBILE (768px)     */
+/* ============================================ */
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: flex;
+    }
+
+    .nav-menu {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 280px;
+        height: 100vh;
+        background: var(--dark);
+        flex-direction: column;
+        justify-content: center;
+        gap: 32px;
+        padding: 40px;
+        transition: var(--transition);
+        box-shadow: var(--shadow-lg);
+    }
+
+    .nav-menu.active {
+        right: 0;
+    }
+
+    .nav-list {
+        flex-direction: column;
+        gap: 24px;
+    }
+
+    .nav-link {
+        font-size: 1.1rem;
+    }
+
+    .nav-cta {
+        display: none;
+    }
+
+    .hero-container {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .hero {
+        padding-top: 100px;
+    }
+
+    .hero-title {
+        font-size: 2.2rem;
+    }
+
+    .hero-stats {
+        gap: 24px;
+    }
+
+    .stat-number,
+    .stat-suffix {
+        font-size: 1.8rem;
+    }
+
+    .beneficios-grid {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .beneficios-img {
+        height: 350px;
+    }
+
+    .depoimentos-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .cta-box {
+        padding: 24px;
+    }
+
+    .lead-form {
+        padding: 24px;
+    }
+
+    .footer-top {
+        grid-template-columns: 1fr;
+        gap: 32px;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+        gap: 16px;
+        text-align: center;
+    }
+
+    .footer-legal {
+        flex-direction: column;
+        gap: 8px;
+    }
+}
+
+/* ============================================ */
+/* BLOCO 3: RESPONSIVIDADE - MOBILE PEQUENO     */
+/* ============================================ */
+@media (max-width: 480px) {
+    .hero-title {
+        font-size: 1.8rem;
+    }
+
+    .hero-subtitle {
+        font-size: 1rem;
+    }
+
+    .hero-actions {
+        flex-direction: column;
+    }
+
+    .btn-lg {
+        width: 100%;
+    }
+
+    .hero-stats {
+        flex-direction: column;
+        gap: 16px;
+    }
+
+    .solucao-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .section-title {
+        font-size: 1.8rem;
+    }
+
+    .dashboard-body {
+        grid-template-columns: 1fr;
+    }
+
+    .dashboard-float {
+        display: none;
+    }
+
+    .cta-title {
+        font-size: 1.6rem;
+    }
+
+    .trust-logos {
+        gap: 24px;
+    }
+}
